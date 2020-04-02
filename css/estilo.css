@@ -1,0 +1,220 @@
+body {
+    width: 100%;
+}
+
+div {
+    padding: 10px;
+    /* background-color: rgb(62, 158, 85);*/
+}
+
+div#header {
+    width: 80%;
+    background-color: darkgreen;
+}
+
+div#somos,
+#contacto,
+.container {
+    border: 1px solid rgb(107, 102, 102);
+    background-color: rgb(62, 158, 85);
+    background-image: linear-gradient(to bottom left, rgb(62, 158, 85), rgb(170, 159, 9));
+}
+
+h1 {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    color: rgb(170, 159, 9);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    color: rgb(170, 159, 9);
+    font-weight: bold;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+
+/* The grid: Four equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+
+/* Style the images inside the grid */
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* The expanding image container */
+
+
+/* Expanding image text */
+
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Closable button inside the expanded image */
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+a {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:link {
+    color: rgb(170, 159, 9);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(235, 30, 64);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(68, 0, 255);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(255, 0, 221);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.navbar-brand .logo,
+.navbar-brand .logo-alt {
+    max-height: 50px;
+    display: block;
+}
+
+#nav:not(.nav-transparent):not(.fixed-nav) .navbar-brand .logo-alt {
+    display: none;
+}
+
+#nav.nav-transparent:not(.fixed-nav) .navbar-brand .logo {
+    display: none;
+}
+
+#nav.fixed-nav .navbar-brand .logo-alt {
+    display: none;
+}
+
+#nav {
+    padding: 10px 0px;
+    background: #FFF;
+    -webkit-transition: 0.2s padding;
+    transition: 0.2s padding;
+    z-index: 999;
+}
+
+#nav.navbar {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0px;
+}
+
+#nav.fixed-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 0px 0px;
+    background-color: #FFF !important;
+    border-bottom: 1px solid #EEE;
+}
+
+main-nav nav navbar-nav navbar-right #nav.nav-transparent {
+    background: transparent;
+    padding: 20px;
+}
+
+.main-nav li {
+    padding: 0px 15px;
+}
+
+.main-nav li a {
+    font-size: 14px;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+}
+
+.main-nav>li>a {
+    color: #10161A;
+    padding: 15px 0px;
+}
+
+#nav.nav-transparent:not(.fixed-nav) .main-nav>li>a {
+    color: #fff;
+}
+
+.main-nav>li>a:hover,
+.main-nav>li>a:focus,
+.main-nav>li.active>a {
+    background: transparent;
+    color: #6195FF;
+}
+
+.main-nav>li>a:after {
+    content: "";
+    display: block;
+    background-color: #6195FF;
+    height: 2px;
+    width: 0%;
+    -webkit-transition: 0.2s width;
+    transition: 0.2s width;
+}
+
+.main-nav>li>a:hover:after,
+.main-nav>li.active>a:after {
+    width: 100%;
+}
